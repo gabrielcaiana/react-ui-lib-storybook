@@ -1,13 +1,17 @@
-import React from "react"
+import React, { Children } from "react"
+
+interface Props {
+  backgroundColor: string,
+  color: string
+}
 
 const style : React.CSSProperties = {
-  backgroundColor: "#7159c1",
+  backgroundColor: "#34D399",
   color: "#fff"
 }
 
-export const Button: React.FC = (props) => {
+export const Button: React.FC<Props> = ({children, backgroundColor, color}) => {
   return (
-    <button style={style}> {props.children}</button>
+    <button style={style}> {children}</button>
   )
-
 }
