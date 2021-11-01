@@ -13,7 +13,7 @@ storiesOf('Modal', module).add('Test Modal', () => {
       <Button onClick={() => setOpen(true)}>Open modal</Button>
 
       <Modal title="Modal Title" open={open} setOpen={setOpen}>
-        Test
+      <Button onClick={() => setOpen(false)}>Close modal</Button>
       </Modal>
     </>
   );

@@ -1,6 +1,7 @@
 {
   "name": "react-ui-lib-storybook",
   "version": "1.0.0",
+  "author": "Gabriel Caiana",
   "main": "dist/index.js",
   "license": "MIT",
   "devDependencies": {
@@ -22,7 +23,8 @@
   },
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "build": "tsc -p ."
   },
   "dependencies": {
     "styled-components": "^5.3.3"
