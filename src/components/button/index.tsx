@@ -1,17 +1,26 @@
-import React, { Children } from "react"
+import React from "react"
 
-interface Props {
-  backgroundColor: string,
-  color: string
+import { Container } from "./style"
+
+export interface Props {
+  backgroundColor?: string,
+  color?: string,
+  outlined?: boolean,
+  onClick?: () => void,
+  disabled?: boolean
 }
 
-const style : React.CSSProperties = {
-  backgroundColor: "#34D399",
-  color: "#fff"
-}
-
-export const Button: React.FC<Props> = ({children, backgroundColor, color}) => {
+const ButtonWrapper: React.FC<Props> = ({
+  children,
+  backgroundColor = "#34D399" ,
+  color = "#fff",
+  outlined = false,
+  ...props
+  
+}) => {
   return (
-    <button style={style}> {children}</button>
+    <Container backgroundColor={backgroundColor} color={color} outlined={outlined} {...props}>{children}</Container>
   )
 }
+
+export {  ButtonWrapper as Button }

@@ -5,5 +5,7 @@ import centered from '@storybook/addon-centered/react';
 
 storiesOf('Button', module)
   .addDecorator(centered)
-  .add('Default', () => <Button backgroundColor="#34D399" color="#fff">Hello World</Button>)
+  .add('Default', () => <Button>Default</Button>)
+  .add('Outlined', () => <Button outlined>Outlined</Button>)
+  .add('Disabled', () => <Button disabled>Disabled</Button>)
 
