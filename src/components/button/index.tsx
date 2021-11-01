@@ -5,9 +5,9 @@ const style : React.CSSProperties = {
   color: "#fff"
 }
 
-export const Button: React.FC = (children) => {
+export const Button: React.FC = (props) => {
   return (
-    <button style={style}> { children }</button>
+    <button style={style}> {props.children}</button>
   )
 
 }

@@ -7,6 +7,7 @@ export default create({
   appContentBg: '#091A28',
   appBorderColor: '#34D399',
   textColor: '#fff',
+  textInverseColor: "#fff",
   barTextColor: '#E6E6E6',
   barSelectedColor: '#ffffff',
   barBg: '#1b1a1f',
