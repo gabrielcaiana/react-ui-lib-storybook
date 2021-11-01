@@ -2,5 +2,10 @@
   "name": "react-ui-lib-storybook",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^17.0.33",
+    "react": "^17.0.2",
+    "typescript": "^4.4.4"
+  }
 }
