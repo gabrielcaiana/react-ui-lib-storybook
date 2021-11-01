@@ -1,7 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Separator } from '../components/separator';
 import centered from '@storybook/addon-centered/react';
+
+import { Separator } from '../components/Separator';
 
 storiesOf('Separator', module)
   .addDecorator(centered)

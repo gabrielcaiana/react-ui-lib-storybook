@@ -10,7 +10,7 @@ export interface Props {
   disabled?: boolean
 }
 
-const ButtonWrapper: React.FC<Props> = ({
+export const Button: React.FC<Props> = ({
   children,
   backgroundColor = "#34D399" ,
   color = "#fff",
@@ -22,5 +22,3 @@ const ButtonWrapper: React.FC<Props> = ({
     <Container backgroundColor={backgroundColor} color={color} outlined={outlined} {...props}>{children}</Container>
   )
 }
-
-export {  ButtonWrapper as Button }

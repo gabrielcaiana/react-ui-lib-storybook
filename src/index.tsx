@@ -1,2 +1,3 @@
-export { Button } from "./components/button"
-export { Separator } from "./components/separator"
+export { Button } from "./components/Button"
+export { CheckBox } from "./components/CheckBox"
+export { Separator } from "./components/Separator"
